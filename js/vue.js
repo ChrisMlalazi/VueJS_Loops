@@ -10,7 +10,7 @@ new Vue({
     {name: 'Merc', age: 'unknown', color: 'metallic'}
     ], 
 
-    name: 'Looping through the BIG FIVE animals in Africa and including indixes',
+    name: 'Looping through the BIG FIVE animals in Africa and including indexes',
 
      animals: ['Lion', 'Elephant', 'Leopard', 'Rhinocerous', 'Buffalo'],
 
