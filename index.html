@@ -1,0 +1,77 @@
+
+
+<!-- Author: Christopher Mlalazi. Jul 2017.
+
+This code is generated  from the Vue.js tutorials on Udemy called Vue Js 2 - The complete Guide (Including Router & VueX
+
+I have also changed some of the code and just randomly addedd CSS where I wanted.
+
+I have also commented it to show the various methods.
+
+  -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Vue Tutorial</title>
+    <link rel="stylesheet" href="css/main.css" />
+    
+  </head>
+  <body>  
+
+       <header> THIS EXERCISE IS MAINLY FOR LOOPING THROUGH LISTS USING VUE JS </header>
+         
+
+         <div id="wrapper">
+            
+          
+          <div id="app"> 
+              <p>
+                 {{ title }}
+              </p> 
+
+               <ul>
+
+                 <hr>
+                      <!-- Looping through a list of cars -->
+                    <ul>
+                        <li v-for="car in cars">
+                        <div v-for="(value, key) in car">{{ key }}: {{ value }}</div>
+                        </li>               
+                    </ul>
+
+                 <hr>
+                  <p> {{ name }}</p>
+                    <!-- Looping through an unordered list of animals in the Vue.js file  -->
+                    <!-- The list also shows index numbers of elements, indicated by the 'i' -->
+            
+                   <li v-for="(animal, i) in animals">{{ animal }} ({{ i }})</li>
+               </ul>
+
+                  <hr>
+
+                  <hr>
+              <!--  Displaying the list of animals and their indexes in a template -->
+                <div>
+               <template   v-for="(index, animal) in animals">
+                   <p class="red" >({{ animal  }})</p>
+                   <p class="red">{{ index }}</p>
+               </template>
+                </div>
+                <hr>
+          <!--  looping through numbers and outputting them -->
+               <div>
+               <p> {{ numbers }}</p>
+               <p v-for="number in 10"> {{ number }}</p> 
+              </div>
+        </div>
+
+        </div> <!-- wrapper -->
+
+        <footer>Written By Christopher Mlalazi Using the <a href="https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/overview">Vue.js Udemy Tutorials</a> developed by <a href="https://www.udemy.com/user/maximilian-schwarzmuller/">Maximilian Schwarzmuller</a></footer>
+ 
+    <script src="https://unpkg.com/vue"></script>
+    <script src="js/vue.js"></script>
+  </body>
+</html>
